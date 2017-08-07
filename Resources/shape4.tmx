@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="32" tileheight="32" nextobjectid="32">
+ <tileset firstgid="1" name="Desert" tilewidth="32" tileheight="32" spacing="1" margin="1">
+  <image source="tmw_desert_spacing.png" width="265" height="199"/>
+  <terraintypes>
+   <terrain name="Desert" tile="29"/>
+   <terrain name="Brick" tile="9"/>
+   <terrain name="Cobblestone" tile="33"/>
+   <terrain name="Dirt" tile="14"/>
+  </terraintypes>
+  <tile id="0" terrain="0,0,0,1"/>
+  <tile id="1" terrain="0,0,1,1"/>
+  <tile id="2" terrain="0,0,1,0"/>
+  <tile id="3" terrain="3,3,3,0"/>
+  <tile id="4" terrain="3,3,0,3"/>
+  <tile id="5" terrain="0,0,0,3"/>
+  <tile id="6" terrain="0,0,3,3"/>
+  <tile id="7" terrain="0,0,3,0"/>
+  <tile id="8" terrain="0,1,0,1"/>
+  <tile id="9" terrain="1,1,1,1"/>
+  <tile id="10" terrain="1,0,1,0"/>
+  <tile id="11" terrain="3,0,3,3"/>
+  <tile id="12" terrain="0,3,3,3"/>
+  <tile id="13" terrain="0,3,0,3"/>
+  <tile id="14" terrain="3,3,3,3"/>
+  <tile id="15" terrain="3,0,3,0"/>
+  <tile id="16" terrain="0,1,0,0"/>
+  <tile id="17" terrain="1,1,0,0"/>
+  <tile id="18" terrain="1,0,0,0"/>
+  <tile id="19" terrain="1,1,1,0"/>
+  <tile id="20" terrain="1,1,0,1"/>
+  <tile id="21" terrain="0,3,0,0"/>
+  <tile id="22" terrain="3,3,0,0"/>
+  <tile id="23" terrain="3,0,0,0"/>
+  <tile id="24" terrain="0,0,0,2"/>
+  <tile id="25" terrain="0,0,2,2"/>
+  <tile id="26" terrain="0,0,2,0"/>
+  <tile id="27" terrain="1,0,1,1"/>
+  <tile id="28" terrain="0,1,1,1"/>
+  <tile id="29" terrain="0,0,0,0"/>
+  <tile id="30" terrain="0,0,0,0" probability="0.5"/>
+  <tile id="31" terrain="0,0,0,0" probability="0.5"/>
+  <tile id="32" terrain="0,2,0,2"/>
+  <tile id="33" terrain="2,2,2,2"/>
+  <tile id="34" terrain="2,0,2,0"/>
+  <tile id="35" terrain="2,2,2,0"/>
+  <tile id="36" terrain="2,2,0,2"/>
+  <tile id="37" terrain="0,0,0,0" probability="0.5"/>
+  <tile id="38" terrain="0,0,0,0" probability="0.5"/>
+  <tile id="39" terrain="0,0,0,0" probability="0.5"/>
+  <tile id="40" terrain="0,2,0,0"/>
+  <tile id="41" terrain="2,2,0,0"/>
+  <tile id="42" terrain="2,0,0,0"/>
+  <tile id="43" terrain="2,0,2,2"/>
+  <tile id="44" terrain="0,2,2,2"/>
+  <tile id="45" terrain="0,0,0,0" probability="0"/>
+  <tile id="46" terrain="0,0,0,0" probability="0.5"/>
+  <tile id="47" terrain="0,0,0,0" probability="0.5"/>
+ </tileset>
+ <layer name="floor" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzNl8tuwjAQRb3tEnYUKRhRnin8/+fVkTLScHXHHhvcEOmIxHmdXNuTMIQQhsQm8b0w28RXeF6Gmb1ax3Nk34a0R3WexmrX7GD71+mnORj7sD0qWv0E9Dupe13m35/ELTEmrvP60fBjXh4/C72cjPym+z+gTfcny6/WbwdMmVj9KxkJI7me9hE/yysSrHbhkPHzoJ9hbMwvl2vOD+vLlpzP5m9p/OXyQuecn64hcqx2ewTev63jr9Vvr45l8+OV8RfJcR4/XV/kd6qV0o/Sr/eK/Eq5ef2wvrA6U6rPmIsnt5r8XvXzzNf/8JN3CtYXnU9vP1an9Zxh88Vy6+HHvrPuoY+fprV/sa9r/XLzll2/lx9mwbZz+cUGv0t49pGaiO+3mtx65ofXkvcHo+f4s/4bML9cZt78av08Y4/5MYce+WGbjL0aP7y3J0dvfWZ+gvV9Whr7nmdorc8WUrfxXhbvGH89OBey9fjhe3cJxozfp/DpfqvEWrG0T4k/l0GGBw==
+  </data>
+ </layer>
+ <objectgroup name="shape">
+  <object id="11" name="1" type="polyline" x="160" y="48">
+   <polyline points="0,0 112,0 112,64 48,64 48,128 -80,128 -80,-32 144,-32 144,64 208,64 208,160 304,160 304,0 208,0 208,16 288,16 288,144 224,144 224,48 160,48 160,-16 336,-16 336,736 -16,736 -16,752 352,752 352,-16 960,-16 960,16 992,16 992,0 976,0 976,-32 144,-32"/>
+  </object>
+  <object id="13" name="2" type="polyline" x="304" y="32">
+   <polyline points="0,0 -208,0 -208,128 -112,128 -112,64 -48,64 -48,32 -144,32 -144,16"/>
+  </object>
+  <object id="14" name="3" type="polyline" x="144" y="272">
+   <polyline points="0,0 0,192 128,192 128,64 64,64 64,-32 -64,-32 -64,576 992,576 992,-128 1008,-128 1008,-144 976,-144 976,560 -48,560 -48,-16 48,-16 48,80 112,80 112,176 16,176 16,0 0,0"/>
+  </object>
+  <object id="17" name="4" type="polyline" x="384" y="752">
+   <polyline points="0,0 80,0 80,-160 -16,-160 -16,-320 80,-320 80,-512 -16,-512 -16,-416 -80,-416 -80,-256 -240,-256 -240,0 -224,0 -224,-80 -64,-80 -64,-16 -32,-16 -32,-32 -48,-32 -48,-96 -224,-96 -224,-240 -64,-240 -64,-400 0,-400 0,-496 64,-496 64,-336 -32,-336 -32,-144 64,-144 64,-16 0,-16 0,0"/>
+  </object>
+  <object id="19" name="5" type="polyline" x="240" y="704">
+   <polyline points="0,0 0,64 16,64 16,0 0,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="npc">
+  <object id="20" type="player_begin_property" x="40" y="192" width="24" height="24">
+   <properties>
+    <property name="color" value="white"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="21" type="player_end_property" x="1136" y="80" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="25" type="dark_property" x="840" y="80" width="40" height="40">
+   <ellipse/>
+  </object>
+  <object id="26" type="dark_property" x="1008" y="416" width="40" height="40">
+   <ellipse/>
+  </object>
+  <object id="27" type="dark_property" x="264" y="192" width="40" height="40">
+   <ellipse/>
+  </object>
+  <object id="28" type="dark_property" x="176" y="528" width="40" height="40">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="item">
+  <object id="22" type="fragment_property" x="400" y="280" width="32" height="32">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="23" type="fragment_property" x="720" y="656" width="32" height="32">
+   <properties>
+    <property name="color" value="yellow"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="24" type="fragment_property" x="760" y="72" width="32" height="32">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="29" type="fragment_property" x="264" y="568" width="32" height="32">
+   <properties>
+    <property name="color" value="orange"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="30" type="fragment_property" x="320" y="128" width="32" height="32">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="31" type="fragment_property" x="664" y="448" width="32" height="32">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="60" height="40" tilewidth="32" tileheight="32" nextobjectid="45">
+ <tileset firstgid="1" name="dg_grounds32" tilewidth="32" tileheight="32">
+  <image source="dg_grounds32.png" width="288" height="608"/>
+ </tileset>
+ <layer name="floor" width="60" height="40">
+  <data encoding="base64" compression="zlib">
+   eJztw8EJAAAMA6GD7L9zZ+hfwVVTVVVVVVVVVVX1/QDUoRwh
+  </data>
+ </layer>
+ <objectgroup name="map">
+  <object id="39" name="1" x="8" y="608">
+   <polyline points="0,0 88,-64 224,0 696,0 720,-88 760,-112 696,-176 296,-176 296,-464 208,-464 208,-280 240,-280 176,-144 104,-280 136,-280 136,-464 88,-464 240,-600 288,-568 1600,-568 1656,-528 1600,-496 1432,-496 1376,-400 1264,-400 1176,-352 1080,-400 952,-400 888,-496 384,-496 432,-464 368,-464 368,-360 896,-360 896,-280 928,-280 872,-176 808,-280 840,-280 840,-304 368,-304 368,-248 728,-248 840,-144 872,-160 912,-144 1064,-320 1560,-328 1736,-192 1736,-56 1792,-56 1792,-112 1888,-16 1792,80 1792,24 1736,24 1736,488 1512,640 512,640 512,480 864,480 864,456 992,512 864,560 864,536 568,536 568,584 1464,584 1464,240 1664,240 1664,-160 1536,-264 1104,-256 984,-112 1024,-96 1056,-48 1200,-128 1400,-128 1400,24 1448,24 1448,-24 1544,-24 1544,136 1448,136 1448,88 1400,88 1400,256 1200,248 1056,160 1032,208 984,232 1024,312 1056,296 1032,392 936,352 968,336 928,256 880,272 824,240 784,320 816,344 712,368 696,256 728,280 768,208 728,184 704,96 584,96 464,296 560,392 336,640 176,640 112,592 168,544 296,544 432,392 216,392 216,440 168,480 112,432 112,312 328,312 480,96 232,96 88,200 0,128 0,0"/>
+  </object>
+  <object id="40" name="3" x="1344" y="552">
+   <polygon points="0,0 -128,0 -256,72 -240,112 -256,152 -136,232 0,240"/>
+  </object>
+  <object id="42" name="4" x="1672" y="912">
+   <polygon points="0,0 -128,0 -128,216 0,136"/>
+  </object>
+  <object id="43" name="2" x="1352" y="872">
+   <polyline points="0,0 32,16 64,56 64,96 40,128 72,152 40,152 40,280 -128,280 -160,304 -200,304 -232,272 -232,224 -200,192 -160,192 -128,216 -24,216 -24,152 -56,152 -24,128 -56,96 -56,56 -24,16 0,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="item">
+  <object id="7" type="fragment_property" x="176" y="1184" width="32" height="32">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="8" type="fragment_property" x="1000" y="936" width="32" height="32">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="9" type="fragment_property" x="1496" y="648" width="32" height="32">
+   <properties>
+    <property name="color" value="yellow"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="10" type="fragment_property" x="1168" y="176" width="32" height="32">
+   <properties>
+    <property name="color" value="magenta"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="11" type="beacon_property" x="1336" y="904" width="32" height="32">
+   <properties>
+    <property name="fragment_number" value="4"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="npc">
+  <object id="12" type="player_begin_property" x="8" y="648" width="48" height="48">
+   <properties>
+    <property name="color" value="red"/>
+    <property name="tip_text" value="you need to collect enough fragment"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="13" type="dark_property" x="152" y="976" width="48" height="48">
+   <ellipse/>
+  </object>
+  <object id="14" type="dark_property" x="1040" y="640" width="48" height="48">
+   <ellipse/>
+  </object>
+  <object id="15" type="dark_property" x="856" y="472" width="48" height="48">
+   <ellipse/>
+  </object>
+  <object id="16" type="dark_property" x="1776" y="568" width="48" height="48">
+   <ellipse/>
+  </object>
+  <object id="17" type="dark_property" x="944" y="120" width="80" height="80">
+   <ellipse/>
+  </object>
+  <object id="18" type="dark_property" x="360" y="48" width="48" height="48">
+   <properties>
+    <property name="action" value="50"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="20" name="50" type="action_property" x="384" y="72">
+   <properties>
+    <property name="action_type" value="move"/>
+    <property name="duration" value="5"/>
+   </properties>
+   <polyline points="0,0 504,0"/>
+  </object>
+  <object id="35" type="dark_property" x="72" y="560" width="48" height="48">
+   <ellipse/>
+  </object>
+  <object id="38" type="dark_property" x="80" y="728" width="48" height="48">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="mechanism">
+  <object id="21" name="131" type="potal_mechainism_end" x="1152" y="1104" width="40" height="40">
+   <properties>
+    <property name="begin_name" value="130"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="22" name="130" type="potal_mechainism_begin" x="872" y="1096" width="40" height="40">
+   <properties>
+    <property name="end_name" value="131"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="23" name="101" type="mechanism_door" x="1408" y="632">
+   <properties>
+    <property name="key_name" value="120"/>
+    <property name="shape" value="polyline"/>
+   </properties>
+   <polyline points="0,0 0,64"/>
+  </object>
+  <object id="24" name="120" type="mechanism_key" x="736" y="904" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="31" name="102" type="mechanism_door" x="920" y="464">
+   <properties>
+    <property name="key_name" value="121"/>
+    <property name="shape" value="polyline"/>
+   </properties>
+   <polyline points="-40,-16 112,48"/>
+  </object>
+  <object id="32" name="121" type="mechanism_key" x="864" y="344" width="32" height="32">
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

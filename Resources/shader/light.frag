@@ -1,0 +1,51 @@
+
+varying vec4 v_fragmentColor;	
+varying vec2 v_texCoord;	
+
+uniform vec2  u_lightPos;
+uniform float u_maxLightRadius;
+uniform vec2  u_resolution;
+
+vec4 calculateReduceColor(float length,vec4 color)
+{
+    return (1.0-(length/u_maxLightRadius))*color;
+}
+
+vec4 calculateBlusColor(vec2 pos,float length)
+{
+    vec4 recolor = vec4(0,0,0,0);
+    float nowAngle = atan(pos.y-u_lightPos.y,pos.x-u_lightPos.x);
+    float radianCell = radians(0.5);
+    vec2 unit = 1.0 / u_resolution.xy;
+    float blurRotateAngle = 3.1;
+    float radiallength = 2.0;
+    for(float i = nowAngle - radianCell*blurRotateAngle;
+        i <= nowAngle + radianCell*blurRotateAngle;
+        i += radianCell)
+    {
+        vec4 col = vec4(0,0,0,0);
+        for(float templen = length-radiallength;templen<=length+radiallength;++templen)
+        {
+            vec2 tempangle = vec2(templen*cos(i),templen*sin(i)); 
+            vec2 pos = (u_lightPos + tempangle - pos)*unit;
+            col += texture2D(CC_Texture0, v_texCoord+pos)/(radiallength*2.0+1.0);
+        }
+        recolor += col/(blurRotateAngle*2.0+1.0);
+    }
+    return recolor;
+}
+
+void main(void)
+{
+    vec4 v_orColor = v_fragmentColor * texture2D(CC_Texture0, v_texCoord);
+    vec2 nowPos = v_texCoord*u_resolution;
+    float len = distance(nowPos,u_lightPos);
+    if(len > u_maxLightRadius)
+        discard;
+    vec4 blurColor = texture2D(CC_Texture0, v_texCoord);//calculateBlusColor(nowPos,len);
+    if(blurColor.a < 0.1)
+        discard;
+    vec4 reduceColor = calculateReduceColor(len,blurColor);//blurColor;
+
+    gl_FragColor = reduceColor;
+}

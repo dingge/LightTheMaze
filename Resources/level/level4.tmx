@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="36" height="23" tilewidth="32" tileheight="32" nextobjectid="57">
+ <tileset firstgid="1" name="dg_grounds32" tilewidth="32" tileheight="32">
+  <image source="dg_grounds32.png" width="288" height="608"/>
+  <terraintypes>
+   <terrain name="water" tile="15"/>
+   <terrain name="floor" tile="3"/>
+  </terraintypes>
+  <tile id="3" terrain="1,1,1,1"/>
+  <tile id="4" terrain="1,1,1,1"/>
+  <tile id="5" terrain="1,1,1,1"/>
+  <tile id="15" terrain="0,0,0,0"/>
+  <tile id="16" terrain="0,0,0,0"/>
+  <tile id="17" terrain="0,0,0,0"/>
+ </tileset>
+ <layer name="floor" width="36" height="23">
+  <data encoding="base64" compression="zlib">
+   eJztzqENAAAMA6Am/f/nPTFRgcDTJB2RgYOPj4/PAh8fHx8fH5+fzwE8Rwlw
+  </data>
+ </layer>
+ <objectgroup name="map">
+  <object id="13" name="1" type="polyline" x="0" y="192">
+   <polyline points="1,131 0,8 616,-184 952,312 304,312 304,384 968,392 968,32 920,-32 968,-96 1032,-96 1080,-32 1032,32 1112,191"/>
+  </object>
+  <object id="18" name="2" type="polyline" x="0" y="288">
+   <polyline points="3,32 96,0 600,-152 792,144 176,144 176,376 376,376 1048,384 1048,112 1112,96"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="item">
+  <object id="30" type="beacon_property" x="976" y="112" width="48" height="48">
+   <properties>
+    <property name="fragment_number" value="3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="39" type="fragment_property" x="208" y="496" width="64" height="64">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="npc">
+  <object id="20" type="player_begin_property" x="24" y="232" width="32" height="32">
+   <properties>
+    <property name="color" value="white"/>
+    <property name="tip_text" value="Explore..."/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="21" type="player_end_property" x="1056" y="344" width="32" height="32">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="mechanism"/>
+</map>

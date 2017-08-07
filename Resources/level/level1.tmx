@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="40" height="30" tilewidth="32" tileheight="32" nextobjectid="77">
+ <tileset firstgid="1" name="dg_grounds32" tilewidth="32" tileheight="32">
+  <image source="dg_grounds32.png" width="288" height="608"/>
+  <terraintypes>
+   <terrain name="water" tile="15"/>
+   <terrain name="floor" tile="3"/>
+  </terraintypes>
+  <tile id="3" terrain="1,1,1,1"/>
+  <tile id="4" terrain="1,1,1,1"/>
+  <tile id="5" terrain="1,1,1,1"/>
+  <tile id="15" terrain="0,0,0,0"/>
+  <tile id="16" terrain="0,0,0,0"/>
+  <tile id="17" terrain="0,0,0,0"/>
+ </tileset>
+ <layer name="floor" width="40" height="30">
+  <data encoding="base64" compression="zlib">
+   eJztw8EJAAAMA6GD7L9z1+hDwVVTVVVV1acPDJwOEQ==
+  </data>
+ </layer>
+ <objectgroup name="item">
+  <object id="27" type="fragment_property" x="520" y="240" width="40" height="40">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="30" type="beacon_property" x="1128" y="128" width="48" height="48">
+   <properties>
+    <property name="fragment_number" value="3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="39" type="fragment_property" x="192" y="488" width="64" height="64">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="40" type="fragment_property" x="800" y="568" width="40" height="40">
+   <properties>
+    <property name="color" value="yellow"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="npc">
+  <object id="20" type="player_begin_property" x="16" y="208" width="32" height="32">
+   <properties>
+    <property name="color" value="red"/>
+    <property name="tip_text" value="Explore..."/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="21" type="player_end_property" x="1240" y="336" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="25" type="dark_property" x="632" y="296" width="80" height="80">
+   <ellipse/>
+  </object>
+  <object id="31" type="dark_property" x="420" y="300" width="40" height="40">
+   <properties>
+    <property name="action" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="32" type="dark_property" x="72" y="744" width="40" height="40">
+   <ellipse/>
+  </object>
+  <object id="33" type="dark_property" x="112" y="784" width="40" height="40">
+   <ellipse/>
+  </object>
+  <object id="34" type="dark_property" x="904" y="736" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="35" name="0" type="action_property" x="440" y="320">
+   <properties>
+    <property name="action_type" value="move"/>
+    <property name="duration" value="3"/>
+   </properties>
+   <polyline points="0,0 -152,0 -152,56"/>
+  </object>
+  <object id="38" type="dark_property" x="1032" y="600" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="50" type="dark_property" x="296" y="64" width="24" height="24">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="mechanism">
+  <object id="45" name="102" type="rotate_mechanism" x="296" y="168">
+   <properties>
+    <property name="begin_angle" value="0"/>
+    <property name="duration" value="3"/>
+    <property name="end_angle" value="270"/>
+    <property name="is_reverse" value="1"/>
+   </properties>
+   <polyline points="0,-32 -56,-64 -56,-64 0,-32 0,-32"/>
+  </object>
+  <object id="48" name="100" type="move_mechanism" x="80" y="200" width="48" height="48">
+   <properties>
+    <property name="action" value="110"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="49" name="110" type="action" x="104" y="224">
+   <properties>
+    <property name="duration" value="3"/>
+    <property name="is_reverse" value="0"/>
+   </properties>
+   <polyline points="0,0 72,32 112,16 92,-40 0,0"/>
+  </object>
+  <object id="53" name="120" type="mechanism_key" x="304" y="168" width="24" height="24">
+   <ellipse/>
+  </object>
+  <object id="54" name="130" type="potal_mechainism_begin" x="520" y="120" width="40" height="40">
+   <properties>
+    <property name="end_name" value="131"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="55" name="131" x="192" y="568" width="32" height="32">
+   <ellipse/>
+  </object>
+  <object id="76" name="101" type="mechanism_door" x="320" y="288" width="96">
+   <properties>
+    <property name="key_name" value="120"/>
+    <property name="shape" value="rectangle"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="map">
+  <object id="69" name="1" x="0" y="128">
+   <polyline points="0,0 96,32 96,64 160,64 200,32 224,-64 304,-96 384,-64 408,48 416,160 416,-64 464,-88 520,-64 488,-128 656,-128 640,-96 832,-96 832,32 800,32 832,64 896,64 896,280 1008,264 1048,296 1008,496 1040,448 1080,464 1072,536 944,536 984,328 896,328 896,384 320,384 304,400 320,416 448,416 472,504 448,576 784,576 768,512 704,512 688,416 944,416 928,512 864,512 848,576 1120,576 1120,96 1056,72 1056,32 1112,-56 1120,-32 1152,-96 1184,-32 1192,-56 1248,32 1248,72 1184,96 1184,176 1280,176 1280,256 1184,272 1184,640 456,640 448,672 176,672 160,704 64,704 48,656 64,608 352,608 384,544 360,480 272,480 256,512 240,512 232,544 264,544 264,600 160,600 160,544 192,544 184,512 160,512 120,416 160,320 832,320 832,128 768,128 792,96 736,96 704,40 768,0 768,-32 664,-32 664,128 736,128 736,240 664,288 416,288 368,232 320,288 256,288 208,232 256,160 320,160 328,120 296,40 288,120 184,184 96,128 96,160 0,192 0,0"/>
+  </object>
+  <object id="71" name="2" x="464" y="112">
+   <polygon points="0,0 0,176 48,176 48,120 104,120 104,184 152,184 152,0 104,0 104,64 48,64 48,0"/>
+  </object>
+  <object id="74" name="3" x="264" y="136" width="64" height="32">
+   <properties>
+    <property name="angle" value="0"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+</map>

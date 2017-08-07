@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="80" height="60" tilewidth="32" tileheight="32" nextobjectid="205">
+ <tileset firstgid="1" name="dg_grounds32" tilewidth="32" tileheight="32">
+  <image source="dg_grounds32.png" width="288" height="608"/>
+  <terraintypes>
+   <terrain name="water" tile="15"/>
+   <terrain name="floor" tile="3"/>
+  </terraintypes>
+  <tile id="3" terrain="1,1,1,1"/>
+  <tile id="4" terrain="1,1,1,1"/>
+  <tile id="5" terrain="1,1,1,1"/>
+  <tile id="15" terrain="0,0,0,0"/>
+  <tile id="16" terrain="0,0,0,0"/>
+  <tile id="17" terrain="0,0,0,0"/>
+ </tileset>
+ <layer name="floor" width="80" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztw8EJAAAMA6GD7L9zt+hLwVVTVVVVVVVVVVVVVVVVVVVVVVXVpweXIjhB
+  </data>
+ </layer>
+ <objectgroup name="temp" visible="0">
+  <object id="130" x="1400" y="448">
+   <polyline points="0,-32 144,112 144,312 0,456 -216,456 -360,312 -360,104 -216,-32 0,-32"/>
+  </object>
+  <object id="133" x="1192" y="416">
+   <polyline points="-8,0 -264,-264 -584,-264 -584,-64 -352,-64 -152,136"/>
+  </object>
+  <object id="135" name="101" x="1024" y="392" width="536" height="536">
+   <ellipse/>
+  </object>
+  <object id="136" x="464" y="40">
+   <polyline points="0,-32 144,112 144,312 0,456 -216,456 -360,312 -360,104 -216,-32 0,-32"/>
+  </object>
+  <object id="137" x="1040" y="760">
+   <polyline points="0,0 -192,176 -440,176 -440,376 -120,376 144,144"/>
+  </object>
+  <object id="138" x="456" y="824">
+   <polyline points="0,-32 144,112 144,312 0,456 -216,456 -360,312 -360,104 -216,-32 0,-32"/>
+  </object>
+  <object id="139" x="1544" y="768">
+   <polyline points="0,-8 184,160 432,160 432,368 88,368 -144,136"/>
+  </object>
+  <object id="140" x="2336" y="824">
+   <polyline points="0,-32 144,112 144,312 0,456 -216,456 -360,312 -360,104 -216,-32 0,-32"/>
+  </object>
+  <object id="141" x="1544" y="552">
+   <polyline points="0,0 216,-192 424,-192 424,-400 120,-400 -144,-136"/>
+  </object>
+  <object id="142" x="2328" y="48">
+   <polyline points="0,-32 144,112 144,312 0,456 -216,456 -360,312 -360,104 -216,-32 0,-32"/>
+  </object>
+  <object id="146" x="1184" y="904">
+   <polyline points="0,0 0,768 216,768 216,0"/>
+  </object>
+  <object id="149" x="1184" y="1672">
+   <polyline points="0,0 -144,-128 -32,128 112,200 248,128 384,-128 216,0"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="map">
+  <object id="69" type="polyline" x="232" y="200">
+   <polyline points="0,0 88,48 0,104 216,40 0,0"/>
+  </object>
+  <object id="150" x="1184" y="904">
+   <polyline points="0,0 -264,232 -584,232 -728,376 -944,376 -1088,232 -1088,24 -944,-112 -728,-112 -584,32 -336,32 -144,-144 -144,-352 -344,-552 -576,-552 -720,-408 -936,-408 -1080,-552 -1080,-760 -936,-896 -720,-896 -576,-752 -256,-752 0,-488 216,-488 480,-752 784,-752 928,-888 1144,-888 1288,-744 1288,-544 1144,-400 928,-400 784,-544 576,-544 360,-344 360,-144 544,24 792,24 936,-112 1152,-112 1296,32 1296,232 1152,376 936,376 792,232 448,232 216,0 216,768 384,640 248,896 112,968 -32,896 -144,640 0,768 0,0"/>
+  </object>
+  <object id="171" x="2208" y="1088">
+   <properties>
+    <property name="alpha" value="50"/>
+    <property name="color" value="green"/>
+   </properties>
+   <polyline points="104,-96 104,-96 104,0 104,0 104,-96"/>
+  </object>
+  <object id="172" x="2280" y="944">
+   <properties>
+    <property name="alpha" value="50"/>
+    <property name="color" value="blue"/>
+   </properties>
+   <polyline points="-48,-24 -48,-24 32,48 32,48 -48,-24"/>
+  </object>
+  <object id="173" x="2312" y="1120">
+   <properties>
+    <property name="alpha" value="50"/>
+    <property name="color" value="red"/>
+   </properties>
+   <polyline points="0,-32 -80,40 -80,40 0,-32 0,-32"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="item">
+  <object id="30" type="beacon_property" x="1272" y="1768" width="48" height="48">
+   <properties>
+    <property name="fragment_number" value="3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="98" type="fragment_property" x="352" y="144" width="32" height="32">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="111" type="fragment_property" x="352" y="328" width="32" height="32">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="112" type="fragment_property" x="232" y="232" width="32" height="32">
+   <properties>
+    <property name="color" value="red"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="npc">
+  <object id="20" type="player_begin_property" x="1280" y="648" width="32" height="32">
+   <properties>
+    <property name="color" value="red"/>
+    <property name="tip_text" value="本地图用于毕业设计答辩展示"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="99" type="dark_property" x="2072" y="88" width="40" height="40">
+   <ellipse/>
+  </object>
+  <object id="174" type="dark_property" x="2200" y="168" width="40" height="40">
+   <ellipse/>
+  </object>
+  <object id="175" type="dark_property" x="2320" y="80" width="40" height="40">
+   <ellipse/>
+  </object>
+  <object id="176" type="dark_property" x="2168" y="40" width="88" height="88">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="mechanism">
+  <object id="107" name="102" type="rotate_mechanism" x="328" y="888">
+   <properties>
+    <property name="begin_angle" value="0"/>
+    <property name="duration" value="3"/>
+    <property name="end_angle" value="355"/>
+    <property name="is_reverse" value="1"/>
+    <property name="shape" value="polygon"/>
+   </properties>
+   <polygon points="0,0 -16,-16 -56,-16 -96,16 -16,16 -16,56 16,88 16,16 56,16 88,-16 16,-16 16,-48 -16,-88 -16,-16"/>
+  </object>
+  <object id="108" name="100" type="move_mechanism" x="264" y="1168" width="48" height="48">
+   <properties>
+    <property name="action" value="130"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="109" name="130" type="action" x="288" y="1192">
+   <properties>
+    <property name="duration" value="3"/>
+    <property name="is_reverse" value="0"/>
+   </properties>
+   <polyline points="0,0 16,40 56,56 96,48 120,8 104,-32 64,-48 24,-40 0,0"/>
+  </object>
+  <object id="126" name="120" type="mechanism_key" x="1160" y="528" width="24" height="24">
+   <ellipse/>
+  </object>
+  <object id="151" name="101" type="mechanism_door" x="1160" y="392">
+   <properties>
+    <property name="key_name" value="120"/>
+    <property name="repeat_trigger" value="1"/>
+   </properties>
+   <polyline points="0,0 -144,136 -120,160 24,24 0,0"/>
+  </object>
+  <object id="153" name="102" type="mechanism_door" x="1480" y="408">
+   <properties>
+    <property name="key_name" value="121"/>
+    <property name="repeat_trigger" value="1"/>
+   </properties>
+   <polyline points="-80,8 64,152 88,128 -56,-16 -80,8"/>
+  </object>
+  <object id="154" name="123" type="mechanism_key" x="1136" y="784" width="24" height="24">
+   <ellipse/>
+  </object>
+  <object id="155" name="122" type="mechanism_key" x="1408" y="784" width="24" height="24">
+   <ellipse/>
+  </object>
+  <object id="156" name="121" type="mechanism_key" x="1384" y="520" width="24" height="24">
+   <ellipse/>
+  </object>
+  <object id="157" name="103" type="mechanism_door" x="1456" y="704">
+   <properties>
+    <property name="key_name" value="122"/>
+    <property name="repeat_trigger" value="1"/>
+   </properties>
+   <polyline points="-56,200 -32,224 112,80 88,56 -56,200"/>
+  </object>
+  <object id="159" name="104" type="mechanism_door" x="1096" y="776">
+   <properties>
+    <property name="key_name" value="123"/>
+    <property name="repeat_trigger" value="1"/>
+   </properties>
+   <polyline points="-80,8 64,152 88,128 -56,-16 -80,8"/>
+  </object>
+  <object id="160" name="105" type="mechanism_door" x="1320" y="984">
+   <properties>
+    <property name="key_name" value="124"/>
+    <property name="repeat_trigger" value="0"/>
+   </properties>
+   <polyline points="-136,-48 80,-48 80,-80 -136,-80 -136,-48"/>
+  </object>
+  <object id="161" name="124" type="mechanism_key" x="144" y="232" width="24" height="24">
+   <ellipse/>
+  </object>
+  <object id="162" name="106" type="mechanism_door" x="1320" y="1016">
+   <properties>
+    <property name="key_name" value="125"/>
+    <property name="repeat_trigger" value="0"/>
+   </properties>
+   <polyline points="-136,-48 80,-48 80,-80 -136,-80 -136,-48"/>
+  </object>
+  <object id="163" name="107" type="mechanism_door" x="1320" y="1048">
+   <properties>
+    <property name="key_name" value="126"/>
+    <property name="repeat_trigger" value="0"/>
+   </properties>
+   <polyline points="-136,-48 80,-48 80,-80 -136,-80 -136,-48"/>
+  </object>
+  <object id="164" name="108" type="mechanism_door" x="1320" y="1080">
+   <properties>
+    <property name="key_name" value="127"/>
+    <property name="repeat_trigger" value="0"/>
+   </properties>
+   <polyline points="-136,-48 80,-48 80,-80 -136,-80 -136,-48"/>
+  </object>
+  <object id="167" name="125" type="mechanism_key" x="168" y="1016" width="24" height="24">
+   <ellipse/>
+  </object>
+  <object id="168" name="126" type="mechanism_key" x="2208" y="408" width="24" height="24">
+   <ellipse/>
+  </object>
+  <object id="169" name="127" type="mechanism_key" x="2200" y="1032" width="24" height="24">
+   <ellipse/>
+  </object>
+  <object id="177" name="131" x="888" y="1088" width="40" height="40">
+   <ellipse/>
+  </object>
+  <object id="178" name="130" type="potal_mechainism_begin" x="472" y="904" width="40" height="40">
+   <properties>
+    <property name="end_name" value="131"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="183" name="110" type="action" x="576" y="1024">
+   <properties>
+    <property name="begin_rate" value="0.0"/>
+    <property name="duration" value="3"/>
+    <property name="is_reverse" value="1"/>
+   </properties>
+   <polyline points="40,8 40,112"/>
+  </object>
+  <object id="187" name="100" type="move_mechanism" x="600" y="936" width="32" height="200">
+   <properties>
+    <property name="action" value="110"/>
+   </properties>
+  </object>
+  <object id="193" name="100" type="move_mechanism" x="632" y="960" width="32" height="200">
+   <properties>
+    <property name="action" value="111"/>
+   </properties>
+  </object>
+  <object id="194" name="100" type="move_mechanism" x="664" y="984" width="32" height="200">
+   <properties>
+    <property name="action" value="112"/>
+   </properties>
+  </object>
+  <object id="195" name="100" type="move_mechanism" x="696" y="1008" width="32" height="200">
+   <properties>
+    <property name="action" value="113"/>
+   </properties>
+  </object>
+  <object id="196" name="100" type="move_mechanism" x="728" y="1032" width="32" height="200">
+   <properties>
+    <property name="action" value="114"/>
+   </properties>
+  </object>
+  <object id="197" name="100" type="move_mechanism" x="760" y="1056" width="32" height="200">
+   <properties>
+    <property name="action" value="115"/>
+   </properties>
+  </object>
+  <object id="198" name="111" type="action" x="608" y="1024">
+   <properties>
+    <property name="begin_rate" value="0.2"/>
+    <property name="duration" value="3"/>
+    <property name="is_reverse" value="1"/>
+   </properties>
+   <polyline points="40,8 40,112"/>
+  </object>
+  <object id="199" name="112" type="action" x="640" y="1024">
+   <properties>
+    <property name="begin_rate" value="0.4"/>
+    <property name="duration" value="3"/>
+    <property name="is_reverse" value="1"/>
+   </properties>
+   <polyline points="40,8 40,112"/>
+  </object>
+  <object id="200" name="113" type="action" x="672" y="1024">
+   <properties>
+    <property name="begin_rate" value="0.6"/>
+    <property name="duration" value="3"/>
+    <property name="is_reverse" value="1"/>
+   </properties>
+   <polyline points="40,8 40,112"/>
+  </object>
+  <object id="201" name="114" type="action" x="704" y="1024">
+   <properties>
+    <property name="begin_rate" value="0.8"/>
+    <property name="duration" value="3"/>
+    <property name="is_reverse" value="1"/>
+   </properties>
+   <polyline points="40,8 40,112"/>
+  </object>
+  <object id="202" name="115" type="action" x="736" y="1024">
+   <properties>
+    <property name="begin_rate" value="1.0"/>
+    <property name="duration" value="3"/>
+    <property name="is_reverse" value="1"/>
+   </properties>
+   <polyline points="40,8 40,112"/>
+  </object>
+ </objectgroup>
+</map>

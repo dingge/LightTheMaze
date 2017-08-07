@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="100" height="60" tilewidth="32" tileheight="32" nextobjectid="101">
+ <tileset firstgid="1" name="dg_grounds32" tilewidth="32" tileheight="32">
+  <image source="dg_grounds32.png" width="288" height="608"/>
+  <terraintypes>
+   <terrain name="water" tile="15"/>
+   <terrain name="floor" tile="3"/>
+  </terraintypes>
+  <tile id="3" terrain="1,1,1,1"/>
+  <tile id="4" terrain="1,1,1,1"/>
+  <tile id="5" terrain="1,1,1,1"/>
+  <tile id="15" terrain="0,0,0,0"/>
+  <tile id="16" terrain="0,0,0,0"/>
+  <tile id="17" terrain="0,0,0,0"/>
+ </tileset>
+ <layer name="floor" width="100" height="60">
+  <data encoding="base64" compression="zlib">
+   eJztwwEJAAAAw6DB+3d+EQVXTVVVVVVVVVVVVVVVVVVVVVVVVVVVVVXVDpGPRlE=
+  </data>
+ </layer>
+ <objectgroup name="map">
+  <object id="13" name="1" type="polyline" x="0" y="192">
+   <polyline points="1,131 0,24 256,24 256,-64 384,-64 384,24 968,32 920,-32 968,-96 1032,-96 1080,-32 1048,32 3192,32 3192,1720 0,1720 0,136"/>
+  </object>
+  <object id="57" name="5" type="rectangle" x="368" y="456" width="104" height="64"/>
+  <object id="69" type="polyline" x="1024" y="1088">
+   <polyline points="0,0 88,48 0,104 216,40 0,0"/>
+  </object>
+  <object id="91" name="20" type="ellipse" x="440" y="920" width="192" height="72">
+   <ellipse/>
+  </object>
+  <object id="95" name="21" type="polygon" x="2832" y="328">
+   <polygon points="0,0 -96,80 16,160 144,104 8,104"/>
+  </object>
+  <object id="97" name="22" type="polyline" x="1384" y="736">
+   <polyline points="0,0 176,0 144,-16 112,-48 104,-88 128,-128 184,-144 240,-128 264,-96 264,-64 232,-32 440,-32"/>
+  </object>
+  <object id="98" name="23" type="polyline" x="2600" y="1408">
+   <polyline points="0,0 176,144"/>
+  </object>
+  <object id="100" x="216" y="544">
+   <properties>
+    <property name="alpha" value="100"/>
+    <property name="color" value="yellow"/>
+   </properties>
+   <polyline points="112,-104 0,-16"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="item">
+  <object id="30" type="beacon_property" x="976" y="112" width="48" height="48">
+   <properties>
+    <property name="fragment_number" value="3"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="npc">
+  <object id="20" type="player_begin_property" x="24" y="248" width="32" height="32">
+   <properties>
+    <property name="color" value="red"/>
+    <property name="tip_text" value="Explore..."/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="21" type="player_end_property" x="1008" y="288" width="32" height="32">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="mechanism"/>
+</map>

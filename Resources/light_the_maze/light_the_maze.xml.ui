@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<UIProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectDir>G:\Cocos2d-x\cocos2d-x-3.2\project\LightInTheMaze\Resources\light_the_maze</ProjectDir>
+  <Version>1.6.0.0</Version>
+  <Resources>G:\Cocos2d-x\cocos2d-x-3.2\project\LightInTheMaze\Resources\light_the_maze\Resources</Resources>
+  <Name>light_the_maze</Name>
+  <JsonFileName>light_the_maze.json</JsonFileName>
+  <JsonFolder>G:\Cocos2d-x\cocos2d-x-3.2\project\LightInTheMaze\Resources\light_the_maze\Json</JsonFolder>
+  <JsonList>
+    <string>light_the_maze_menu.json</string>
+    <string>light_the_maze_select.json</string>
+  </JsonList>
+  <CanvasSize>
+    <Width>1024</Width>
+    <Height>768</Height>
+  </CanvasSize>
+  <filePath>G:\Cocos2d-x\cocos2d-x-3.2\project\LightInTheMaze\Resources\light_the_maze\light_the_maze.xml.ui</filePath>
+  <ProjectType>UIProject</ProjectType>
+  <ResRelativePath />
+  <imageFileList />
+  <imagePngList>
+    <string>background.png</string>
+    <string>map5.png</string>
+    <string>map4.png</string>
+    <string>map6.png</string>
+    <string>map1.png</string>
+    <string>map2.png</string>
+    <string>map8.png</string>
+    <string>map7.png</string>
+  </imagePngList>
+  <JsonSuffix>.json</JsonSuffix>
+  <CurrentUIJson>light_the_maze_menu.json</CurrentUIJson>
+</UIProject>

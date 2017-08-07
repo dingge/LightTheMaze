@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="36" height="23" tilewidth="32" tileheight="32" nextobjectid="126">
+ <tileset firstgid="1" name="dg_grounds32" tilewidth="32" tileheight="32">
+  <image source="dg_grounds32.png" width="288" height="608"/>
+  <terraintypes>
+   <terrain name="water" tile="15"/>
+   <terrain name="floor" tile="3"/>
+  </terraintypes>
+  <tile id="3" terrain="1,1,1,1"/>
+  <tile id="4" terrain="1,1,1,1"/>
+  <tile id="5" terrain="1,1,1,1"/>
+  <tile id="15" terrain="0,0,0,0"/>
+  <tile id="16" terrain="0,0,0,0"/>
+  <tile id="17" terrain="0,0,0,0"/>
+ </tileset>
+ <layer name="floor" width="36" height="23">
+  <data encoding="base64" compression="zlib">
+   eJztzqENAAAMA6Am/f/nPTFRgcDTJB2RgYOPj4/PAh8fHx8fH5+fzwE8Rwlw
+  </data>
+ </layer>
+ <objectgroup name="map">
+  <object id="13" name="1" type="polyline" x="0" y="192">
+   <polyline points="1,131 0,24 256,24 256,-64 384,-64 384,24 968,32 920,-32 968,-96 1032,-96 1080,-32 1048,32 1056,536"/>
+  </object>
+  <object id="18" name="2" type="polyline" x="0" y="288">
+   <polyline points="0,32 0,440 1056,440"/>
+  </object>
+  <object id="57" name="5" type="rectangle" x="376" y="408" width="104" height="64"/>
+  <object id="69" type="polyline" x="512" y="472">
+   <polyline points="0,0 88,48 0,104 216,40 0,0"/>
+  </object>
+  <object id="91" name="20" type="ellipse" x="520" y="624" width="192" height="72">
+   <ellipse/>
+  </object>
+  <object id="95" name="21" type="polygon" x="848" y="496">
+   <polygon points="0,0 -96,80 16,160 144,104 8,104"/>
+  </object>
+  <object id="97" name="22" type="polyline" x="536" y="400">
+   <polyline points="0,0 176,0 144,-16 112,-48 104,-88 128,-128 184,-144 240,-128 264,-96 264,-64 232,-32 440,-32"/>
+  </object>
+  <object id="110" x="136" y="456">
+   <properties>
+    <property name="alpha" value="50"/>
+    <property name="color" value="green"/>
+   </properties>
+   <polyline points="104,-96 16,-48 48,8 104,0 104,-96"/>
+  </object>
+  <object id="125" x="272" y="368">
+   <properties>
+    <property name="alpha" value="100"/>
+    <property name="color" value="red"/>
+   </properties>
+   <polyline points="88,24 -32,-40"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="item">
+  <object id="30" type="beacon_property" x="976" y="112" width="48" height="48">
+   <properties>
+    <property name="fragment_number" value="3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="98" type="fragment_property" x="304" y="160" width="32" height="32">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="111" type="fragment_property" x="344" y="312" width="32" height="32">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="112" type="fragment_property" x="136" y="304" width="32" height="32">
+   <properties>
+    <property name="color" value="blue"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="npc">
+  <object id="20" type="player_begin_property" x="24" y="248" width="32" height="32">
+   <properties>
+    <property name="color" value="red"/>
+    <property name="tip_text" value="Explore..."/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="99" type="dark_property" x="1000" y="208" width="40" height="40">
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="mechanism">
+  <object id="107" name="102" type="rotate_mechanism" x="368" y="600">
+   <properties>
+    <property name="begin_angle" value="0"/>
+    <property name="duration" value="3"/>
+    <property name="end_angle" value="355"/>
+    <property name="is_reverse" value="1"/>
+    <property name="shape" value="polygon"/>
+   </properties>
+   <polygon points="0,0 -16,-16 -56,-16 -96,16 -16,16 -16,56 16,88 16,16 56,16 88,-16 16,-16 16,-48 -16,-88 -16,-16"/>
+  </object>
+  <object id="108" name="100" type="move_mechanism" x="40" y="536" width="48" height="48">
+   <properties>
+    <property name="action" value="110"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="109" name="110" type="action" x="64" y="560">
+   <properties>
+    <property name="duration" value="3"/>
+    <property name="is_reverse" value="0"/>
+   </properties>
+   <polyline points="0,0 16,40 56,56 96,48 120,8 104,-32 64,-48 24,-40 0,0"/>
+  </object>
+ </objectgroup>
+</map>

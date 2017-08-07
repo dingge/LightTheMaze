@@ -1,0 +1,93 @@
+{
+	"font_en" : "fonts/Marker Felt.ttf",
+	"font_zh" : "fonts/HYI_KTJ.ttf",
+	"information_text":"谨在此感谢为本项目的开发提供支持的朋友们\n策划：林峻弘、叶鼎、钟元\n程序：林峻弘\n美术资源：陈仲予、林峻弘\n指导老师：王丽娟",
+	
+	"difficulty" : 1,
+	"loss_velocity" : 1.0,
+	
+	"light_sprite" :
+	{
+		"particle_path" : "particle/light.plist",
+		"standard_hp" : 200.0,
+		"light_radius" : 300.0,
+		"immediate_force" : 1000.0,
+		"velocity_limit" : 200.0,
+		"tag" : 2,
+		"standard_shader" : 
+		{
+			"vert" : "shader/common.vert",
+			"frag" : "shader/light.frag"
+		}
+	},
+
+	"dark_sprite" : 
+	{
+		"particle_path" : "particle/dark.plist",
+		"standard_hp" : 100.0,
+		"immediate_force" : 1000.0,
+		"velocity_limit" : 100.0,
+		"tag" : 1
+	},
+
+	"fragment" : 
+	{
+		"sprite_path" : "fragment.png",
+		"collected_sprite_path" : "fragment_sprite.png",
+		"origin_light_radius" : 30.0,
+		"collected_light_radius" : 300.0,
+		"tag" : 4,
+		"gray_shader" : 
+		{
+			"vert" : "shader/common.vert",
+			"frag" : "shader/gray.frag"
+		}
+	},
+
+	"map" : 
+	{
+		"mask_shader" : 
+		{
+			"vert" : "shader/common.vert",
+			"frag" : "shader/map_mask.frag"
+		}
+	},
+	
+	"level" : 
+	[
+		{
+			"image_path": "ui/map1.png",
+			"file_path" : "level/level1.tmx"
+		},
+
+		{
+			"image_path": "ui/map2.png",
+			"file_path" : "level/level2.tmx"
+		},
+
+		{
+			"image_path": "ui/map3.png",
+			"file_path" : "level/level3.tmx"
+		},
+
+		{
+			"image_path": "ui/map4.png",
+			"file_path" : "level/level5.tmx"
+		},
+
+		{
+			"image_path": "ui/map5.png",
+			"file_path" : "level/level-big_map.tmx"
+		},
+
+		{
+			"image_path": "ui/map6.png",
+			"file_path" : "level/level-test.tmx"
+		},
+		
+		{
+			"image_path": "ui/map7.png",
+			"file_path" : "level/level-display.tmx"
+		}
+	]
+}

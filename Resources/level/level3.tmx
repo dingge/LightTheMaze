@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="80" height="50" tilewidth="32" tileheight="32" nextobjectid="95">
+ <tileset firstgid="1" name="dg_grounds32" tilewidth="32" tileheight="32">
+  <image source="dg_grounds32.png" width="288" height="608"/>
+ </tileset>
+ <layer name="floor" width="80" height="50">
+  <data encoding="base64" compression="zlib">
+   eJztwwEJAAAMBKGD7995Qabgqqmqqqqqqqqqqqqqqqqqqvr+AcoXLuE=
+  </data>
+ </layer>
+ <objectgroup name="map">
+  <object id="21" name="0" type="polyline" x="1239.33" y="261.333">
+   <polyline points="1304.67,130.667 1304.67,258.667 920.67,258.667 928.666,712"/>
+  </object>
+  <object id="24" name="1" type="polyline" x="1239.33" y="261.333">
+   <polyline points="1304.67,130.667 920.67,130.667 920,-36.667 1136.67,-37.333 1136.67,-253.333 594,-254 592.67,-37.333 776.67,-37.333 776.67,602.667"/>
+  </object>
+  <object id="25" name="2" type="polyline" x="1078.75" y="507">
+   <polyline points="1089.25,465.583 1089.5,471.417 765.083,473 766.917,626.5 -114.083,623"/>
+  </object>
+  <object id="27" name="3" type="polyline" x="1010.67" y="524">
+   <polyline points="1005.33,340 757.33,340 757.334,564 186.666,563.333 266,492 250,383.333 208.666,334.667 119.333,320 48,348.667 -1.99967,429.333 48.6667,510.667 -534.667,511.333"/>
+  </object>
+  <object id="28" name="4" type="polyline" x="356" y="589.333">
+   <polyline points="120.5,445 118,236.333 7.33333,168 1382.33,161.666"/>
+  </object>
+  <object id="29" name="5" type="polyline" x="446.667" y="646">
+   <polyline points="520,484 -78.5,485.333 -80.333,257 -146.667,256 -143.333,573"/>
+  </object>
+  <object id="30" name="6" type="polyline" x="248.667" y="693.333">
+   <polyline points="54.6667,526.667 1657.67,524.667 1658,331 2188.67,329.333 2197,804.667 1658,807.333 1657.33,636.333 -81.6667,633"/>
+  </object>
+  <object id="32" name="7" type="polyline" x="192" y="743.333">
+   <polyline points="-24,583 -27,159 -157.667,159 -157.363,-86.6973"/>
+  </object>
+  <object id="33" name="8" type="polyline" x="48" y="370.667">
+   <polyline points="-12.3333,285.333 1548.33,279.333"/>
+  </object>
+  <object id="34" name="9" type="polyline" x="860" y="430.667">
+   <polyline points="879.97,318.697 877.485,-105.818 510.531,-103.928"/>
+  </object>
+  <object id="36" name="10" type="polyline" x="790" y="367.333">
+   <polyline points="806.333,281.667 803.333,75 581.333,73.333 582.667,211.333 473.166,211 472.833,211 469,-210 413.333,-249.333 434,-326.333 496.667,-346.667 570,-342.667 619,-310 636.333,-260.333 578.333,-210.75 580.424,-40.4545"/>
+  </object>
+  <object id="38" name="11" type="polyline" x="552" y="7.33333">
+   <polyline points="596.5,-3.5 598,324.5 427,324.667 -312.667,326.667 -313.333,-0.666667 596.667,-4.16667"/>
+  </object>
+  <object id="40" name="12" type="polyline" x="61.3333" y="175.333">
+   <polyline points="85,224 462.333,225 464,399.333 87.3333,400.667 85.3333,224.667"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="item">
+  <object id="42" type="fragment_property" x="1124.67" y="948" width="50.6667" height="48">
+   <properties>
+    <property name="color" value="red"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="43" type="fragment_property" x="2159.83" y="1248.67" width="53" height="52.1667">
+   <properties>
+    <property name="color" value="orange"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="45" type="fragment_property" x="186" y="1278.61" width="29" height="30.5">
+   <properties>
+    <property name="color" value="white"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="47" type="fragment_property" x="2299.33" y="27.3333" width="43.3333" height="40.3334">
+   <properties>
+    <property name="color" value="green"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="48" type="beacon_property" x="1286" y="82" width="58" height="55">
+   <properties>
+    <property name="fragment_number" value="4"/>
+   </properties>
+   <ellipse/>
+  </object>
+ </objectgroup>
+ <objectgroup name="npc">
+  <object id="50" type="player_begin_property" x="2199.17" y="434.333" width="52" height="51.8333">
+   <properties>
+    <property name="color" value="red"/>
+    <property name="tip_text" value="Have a try?"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="51" type="dark_property" x="2073" y="518" width="31" height="30">
+   <ellipse/>
+  </object>
+  <object id="55" type="dark_property" x="1879" y="115" width="26.6667" height="27.6667">
+   <ellipse/>
+  </object>
+  <object id="56" type="dark_property" x="1964" y="29" width="29" height="28.3333">
+   <ellipse/>
+  </object>
+  <object id="57" type="dark_property" x="211.152" y="946" width="39" height="39">
+   <ellipse/>
+  </object>
+  <object id="59" type="dark_property" x="432" y="1278" width="30" height="32.5">
+   <properties>
+    <property name="action" value="50"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="60" type="dark_property" x="1381.67" y="359.667" width="43" height="46">
+   <ellipse/>
+  </object>
+  <object id="61" type="dark_property" x="1655.33" y="346" width="62" height="62">
+   <ellipse/>
+  </object>
+  <object id="62" type="dark_property" x="1612" y="462" width="38" height="40">
+   <ellipse/>
+  </object>
+  <object id="63" type="dark_property" x="325.455" y="750.091" width="32" height="34">
+   <ellipse/>
+  </object>
+  <object id="64" type="dark_property" x="269.833" y="264.167" width="46" height="49.5">
+   <ellipse/>
+  </object>
+  <object id="65" type="dark_property" x="451.333" y="262.5" width="48.5" height="50.5">
+   <ellipse/>
+  </object>
+  <object id="66" type="dark_property" x="648" y="261" width="47" height="50">
+   <ellipse/>
+  </object>
+  <object id="67" type="dark_property" x="1050.67" y="273.667" width="36" height="34">
+   <ellipse/>
+  </object>
+  <object id="68" type="dark_property" x="873.333" y="261.167" width="46" height="47.5">
+   <ellipse/>
+  </object>
+  <object id="70" name="50" type="action_property" x="544.038" y="1291.8" rotation="-0.18423">
+   <properties>
+    <property name="action_type" value="move"/>
+    <property name="duration" value="5"/>
+   </properties>
+   <polyline points="-97.9995,-0.315111 1303.89,-41.6566"/>
+  </object>
+ </objectgroup>
+ <objectgroup name="mechanism">
+  <object id="71" name="120" type="mechanism_key" x="1860.33" y="35.6667" width="37.6667" height="39.3333">
+   <ellipse/>
+  </object>
+  <object id="72" name="130" type="potal_mechainism_begin" x="2479.75" y="438.675" width="53.4894" height="54.9905" rotation="-2.4236">
+   <properties>
+    <property name="end_name" value="131"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="73" name="131" type="potal_mechainism_end" x="165" y="474.334" width="41" height="40.6667">
+   <properties>
+    <property name="begin_name" value="130"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="74" name="132" type="potal_mechainism_begin" x="459.334" y="480.333" width="37.6667" height="37.6667">
+   <properties>
+    <property name="end_name" value="133"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="75" name="133" type="potal_mechainism_end" x="1293" y="508.333" width="49.3334" height="48">
+   <properties>
+    <property name="begin_name" value="132"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="76" name="134" type="potal_mechainism_begin" x="2116" y="935.333" width="29" height="28.3333">
+   <properties>
+    <property name="end_name" value="135"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="77" name="135" type="potal_mechainism_end" x="2370.39" y="1059.55" width="33" height="30">
+   <properties>
+    <property name="begin_name" value="134"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="78" name="121" type="mechanism_key" x="2390.33" y="1449.67" width="29" height="26.3333">
+   <ellipse/>
+  </object>
+  <object id="79" name="136" type="potal_mechainism_begin" x="1949" y="1447.33" width="32.5" height="32.3333">
+   <properties>
+    <property name="end_name" value="137"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="80" name="137" type="potal_mechainism_end" x="50.1515" y="676.182" width="44.3333" height="42">
+   <properties>
+    <property name="begin_name" value="136"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="81" name="138" type="potal_mechainism_begin" x="1936.67" y="1056.67" width="39.6667" height="37">
+   <properties>
+    <property name="end_name" value="139"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="82" name="139" type="potal_mechainism_end" x="260" y="33.3333" width="42" height="42.3333">
+   <properties>
+    <property name="begin_name" value="138"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="83" name="140" type="increase_light" x="1076.67" y="27.3334" width="49.6667" height="46.6667">
+   <properties>
+    <property name="delta_radius" value="8"/>
+    <property name="duration" value="3"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="85" name="100" type="mechanism_door" x="1366.33" y="349.833">
+   <properties>
+    <property name="key_name" value="121"/>
+   </properties>
+   <polyline points="3.875,-22.625 5.08333,89.9167"/>
+  </object>
+  <object id="88" name="101" type="mechanism_door" x="1906.33" y="1297">
+   <properties>
+    <property name="key_name" value="120"/>
+    <property name="shape" value="polyline"/>
+   </properties>
+   <polyline points="0,32.6667 0,-78.6667"/>
+  </object>
+  <object id="90" name="102" type="move_mechanism" x="261.575" y="796.243">
+   <properties>
+    <property name="action" value="110"/>
+    <property name="shape" value="polyline"/>
+   </properties>
+   <polyline points="48,-27 -146.333,90"/>
+  </object>
+  <object id="92" name="110" type="action" x="208.849" y="801.333">
+   <properties>
+    <property name="duration" value="3"/>
+    <property name="is_reverse" value="1"/>
+   </properties>
+   <polyline points="-1,27 -1.33333,-51.6667"/>
+  </object>
+ </objectgroup>
+</map>
